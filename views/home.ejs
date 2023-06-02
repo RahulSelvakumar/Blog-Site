@@ -3,7 +3,7 @@
     <p><%= StartingContent %></p>
     <% for(let i=0;i<Blogs.length;i++){ %>
     <h3><%=Blogs[i].title  %></h3>
-    <p><%=Blogs[i].post.substring(0,100) +"..."%><a href="/post/<%= Blogs[i].title %>">Read more</a> </p>
+    <p><%=Blogs[i].content.substring(0,100) +"..."%><a href="/post/<%= Blogs[i]._id %>">Read more</a> </p>
     <% } %>
     
 <%- include('footer'); %>   
